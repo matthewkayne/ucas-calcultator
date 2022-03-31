@@ -1,0 +1,84 @@
+.border {
+  font-size: 1.6rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: 8px solid;
+  padding: 1rem;
+  -o-border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+     border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+}
+
+.title {
+  font: 100% Helvetica, sans-serif;
+  width: 358px;
+  color: black;
+}
+
+input[type="text"] {
+  background-color: white;
+  border: solid black 2px;
+}
+
+input[type="button"] {
+  border: solid black 2px;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+          box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #24292e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+input[type="button"]:hover {
+  background-color: #f3f4f6;
+  text-decoration: none;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+input[type="button"]:disabled {
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959da5;
+  cursor: default;
+}
+
+input[type="button"]:active {
+  background-color: #edeff2;
+  -webkit-box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+          box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  -webkit-transition: none 0s;
+  transition: none 0s;
+}
+
+input[type="button"]:focus {
+  outline: 1px transparent;
+}
+/*# sourceMappingURL=styles.css.map */
