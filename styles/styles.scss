@@ -1,17 +1,27 @@
 $font-stack: "Avenir Next", sans-serif;
 
-@mixin button {
+@mixin button($small: true) {
+  @if $small {
+    width: 30px;
+  } @else {
+    width: 70px;
+  }
   border: solid black 2px;
-  width: 100%;
 }
+
 table {
   width: 30%;
 }
+
+th {
+  font: 100% $font-stack;
+  font-size: 20px;
+  text-align: left;
+}
+
 .border {
   font-size: 1.6rem;
   display: grid;
-  place-items: center;
-
   border: 8px solid;
   padding: 1rem;
   border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
@@ -22,8 +32,15 @@ input[type="text"] {
   border: solid black 2px;
 }
 
+.small {
+  @include button($small: true);
+}
+
+.big {
+  @include button($small: false);
+}
+
 input[type="button"] {
-  @include button;
   appearance: none;
   background-color: #fafbfc;
   border: 1px solid rgba(27, 31, 35, 0.15);
@@ -75,7 +92,7 @@ input[type="button"]:focus {
 }
 
 .title {
-  font-family: $font-stack;
+  font: 100% $font-stack;
   font-weight: 900;
   font-size: 64px;
   text-transform: uppercase;

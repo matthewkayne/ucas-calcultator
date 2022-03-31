@@ -7,46 +7,51 @@
     <div class="title border">UCAS Calculator</div>
     <table class="border">
       <tr>
-        <td colspan="2"><input type="text" id="letters" /></td>
+        <td colspan="3"><input type="text" id="letters" /></td>
         <td colspan="2"><input type="text" id="result" /></td>
-        <td><input type="button" value="c" onclick="clr()" /></td>
+        <td><input type="button" class="small" value="c" onclick="clr()" /></td>
       </tr>
       <tr>
+        <th>A Level</th>
         <td>
-          <input type="button" value="A*" onclick="dis(56, 'A*')" />
+          <input type="button" class="big" value="A*" onclick="dis(56, 'A*')" />
         </td>
         <td>
-          <input type="button" value="A" onclick="dis(48, 'A')" />
+          <input type="button" class="big" value="A" onclick="dis(48, 'A')" />
         </td>
         <td>
-          <input type="button" value="B" onclick="dis(40, 'B')" />
+          <input type="button" class="big" value="B" onclick="dis(40, 'B')" />
         </td>
         <td>
-          <input type="button" value="C" onclick="dis(32, 'C')" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="button" value="D" onclick="dis(24, 'D')" />
-        </td>
-        <td>
-          <input type="button" value="E" onclick="dis(16, 'E')" />
+          <input type="button" class="big" value="C" onclick="dis(32, 'C')" />
         </td>
       </tr>
       <tr>
+        <th></th>
         <td>
-          <input type="button" value="D*" onclick="dis(56, 'D*')" />
+          <input type="button" class="big" value="D" onclick="dis(24, 'D')" />
         </td>
         <td>
-          <input type="button" value="D" onclick="dis(48, 'D')" />
+          <input type="button" class="big" value="E" onclick="dis(16, 'E')" />
+        </td>
+      </tr>
+      <tr>
+        <th class="text">BTEC</th>
+        <td>
+          <input type="button" class="big" value="D*" onclick="dis(56, 'D*')" />
         </td>
         <td>
-          <input type="button" value="M" onclick="dis(32, 'M')" />
+          <input type="button" class="big" value="D" onclick="dis(48, 'D')" />
         </td>
         <td>
-          <input type="button" value="P" onclick="dis(16, 'P')" />
+          <input type="button" class="big" value="M" onclick="dis(32, 'M')" />
         </td>
-        <td><input type="button" value="=" onclick="solve()" /></td>
+        <td>
+          <input type="button" class="big" value="P" onclick="dis(16, 'P')" />
+        </td>
+        <td>
+          <input type="button" class="small" value="=" onclick="solve()" />
+        </td>
       </tr>
     </table>
   </body>

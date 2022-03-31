@@ -2,11 +2,16 @@ table {
   width: 30%;
 }
 
+th {
+  font: 100% "Avenir Next", sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
 .border {
   font-size: 1.6rem;
   display: -ms-grid;
   display: grid;
-  place-items: center;
   border: 8px solid;
   padding: 1rem;
   -o-border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
@@ -18,9 +23,17 @@ input[type="text"] {
   border: solid black 2px;
 }
 
-input[type="button"] {
+.small {
+  width: 30px;
   border: solid black 2px;
-  width: 100%;
+}
+
+.big {
+  width: 70px;
+  border: solid black 2px;
+}
+
+input[type="button"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -81,7 +94,7 @@ input[type="button"]:focus {
 }
 
 .title {
-  font-family: "Avenir Next", sans-serif;
+  font: 100% "Avenir Next", sans-serif;
   font-weight: 900;
   font-size: 64px;
   text-transform: uppercase;
