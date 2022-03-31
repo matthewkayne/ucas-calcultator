@@ -1,4 +1,4 @@
-$font-stack: Helvetica, sans-serif;
+$font-stack: "Avenir Next", sans-serif;
 
 @mixin button {
   border: solid black 2px;
@@ -13,12 +13,6 @@ $font-stack: Helvetica, sans-serif;
   border: 8px solid;
   padding: 1rem;
   border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
-}
-
-.title {
-  font: 100% $font-stack;
-  width: 350px;
-  color: black;
 }
 
 input[type="text"] {
@@ -76,4 +70,14 @@ input[type="button"]:active {
 
 input[type="button"]:focus {
   outline: 1px transparent;
+}
+
+.title {
+  font-family: $font-stack;
+  font-weight: 900;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  display: inline-block;
 }
